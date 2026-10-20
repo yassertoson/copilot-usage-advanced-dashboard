@@ -14,6 +14,21 @@
 
 # Copilot Usage Advanced Dashboard Tutorial
 
+## Personal usage interface
+
+Open [`src/usage-dashboard/index.html`](src/usage-dashboard/index.html) directly in a
+browser for a standalone personal usage dashboard. No build, dependencies, or
+Grafana deployment is required. It includes model filters, session search, token
+and cache breakdowns, tool activity, light/dark themes, and filtered JSON export.
+
+The interface contains a **static personal session-history snapshot captured on
+October 20, 2026**, not live organization metrics or billing data. Model figures
+are whole-session totals selected by recent activity, not exact seven-day
+consumption. Usage units are not dollar charges or a verified credit balance.
+Tool metrics have their own time-based scope and remain unfiltered. The embedded
+snapshot is visible to anyone who can read the HTML file. This standalone view
+does not change the existing Grafana dashboards or data pipeline.
+
 > ⚠️**Disclaimer**: This project is open sourced to solve problems that are critical to some users, and the functions provided may not be natively provided by GitHub Copilot. Therefore the contents,  opinions and views expressed in this project are solely mine do not necessarly refect the views of my employer, These are my personal notes based on myunderstanding of the code and trial deployments to GitHub Copilot. If anything is wrong with this article, please let me know through the [issues](https://github.com/satomic/copilot-usage-advanced-dashboard/issues/new). l appreciate your help in correcting my understanding.
 
 > ✅**Risk Warning**: This project uses the standard Copilot REST API to obtain data, aggregate data, and visualize it, without any potential risks.
